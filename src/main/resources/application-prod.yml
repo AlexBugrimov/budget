@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/budget
+    username: budget_user
+    password: budget_pass
+    driver-class-name: org.postgresql.Driver
+    tomcat:
+      max-active: 3
+      max-wait: 1000

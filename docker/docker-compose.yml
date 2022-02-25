@@ -1,0 +1,12 @@
+version: '3.2'
+
+services:
+  postgress:
+    image: postgres:alpine
+    container_name: postgres_for_budget
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: budget_user
+      POSTGRES_PASSWORD: budget_pass
+      POSTGRES_DB: budget
